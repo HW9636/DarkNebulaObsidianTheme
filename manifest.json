@@ -1,7 +1,7 @@
 {
-	"name": "Sample Theme",
+	"name": "DarkNebula",
 	"version": "1.0.0",
-	"minAppVersion": "1.0.0",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md"
+	"minAppVersion": "1.5.3",
+	"author": "9636Dev",
+	"authorUrl": "https://github.com/HW9636"
 }

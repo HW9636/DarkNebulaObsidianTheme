@@ -1,34 +1,57 @@
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+	--dark-nebula-black: #030218ff;
+	--dark-nebula-black2: #0c031aff;
+	--dark-nebula-violet: #28124cff;
+	--dark-nebula-violet2: #290a30ff;
+	--dark-nebula-purple: #504286ff;
+	--dark-nebula-blue: #08062eff;
+	--dark-nebula-eminence: #743f81ff;
+
+	--background-primary: var(--dark-nebula-black2);
+	--background-secondary: var(--dark-nebula-black);
+
+	--blockquote-border-thickness: 4px;
+	--blockquote-background-color: #0c031aa0; /* dark2 with opacity */
+	--code-background: rgba(0, 0, 0, 0.5);
+	--titlebar-background: var(--dark-nebula-violet);
+	--titlebar-background-focused: var(--dark-nebula-violet);
+
+	--tab-background-active: var(--dark-nebula-black2);
+
+	--ribbon-background: var(--dark-nebula-blue);
+
+	--nav-item-color: #d2d2d2; /* We have a darker background */
+	--nav-item-background-active: var(--dark-nebula-eminence);
+	--nav-item-color-active: #ffffff;
+	--nav-item-weight-active: 500;
+
+	--vault-name-font-weight: 650;
+	--vault-name-font-size: 1rem;
+
+	--table-border-color: #a1a1a1;
+	--table-border-width: 2px;
+	--table-header-background: var(--dark-nebula-eminence);
+	--table-header-background-hover: var(--dark-nebula-purple);
+	--table-text-color: #c3c3c3;
+
+	--p-spacing: 0.75rem;
+	--bold-weight: 750;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
+.markdown-preview-view {
+	--table-header-background: transparent;
+	--table-header-background-hover: transparent;
 }
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+.workspace-fake-target-overlay:not(.is-in-sidebar) .workspace-tabs .workspace-leaf, .mod-root .workspace-tabs .workspace-leaf {
+	background-image: linear-gradient(#0c031a, #290a30);
 }
 
-.menu {
-	padding: var(--size-2-1);
+.nav-folder.mod-root > .nav-folder-title {
+	background-color: var(--titlebar-background);
 }
 
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
+.nav-folder.mod-root > .nav-folder-title:hover {
+	background-color: var(--titlebar-background-focused);
 }
 
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
-}
