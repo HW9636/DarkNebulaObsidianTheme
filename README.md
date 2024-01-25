@@ -1,6 +1,6 @@
 # Dark Nebula (Obsidian Theme)
 
-![Thumbnail](./thumbnail.jpg)
+![Thumbnail](./thumbnail.png)
 
 ## Features
 - Dark Theme
